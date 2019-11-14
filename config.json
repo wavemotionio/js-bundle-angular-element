@@ -1,0 +1,35 @@
+{
+  "project": "sales-management",
+  "version": "0.0.1",
+  "hooks": [
+    {
+        "hook": "navigation_primary",
+        "nodes": [
+            {
+                "label": "Sales Management",
+                "goTo": "/sales",
+                "children": [
+                    {
+                        "label": "Search",
+                        "goTo": "/search"
+                    },
+                    {
+                        "label": "Summary",
+                        "goTo": "/summary"
+                    },
+                    {
+                        "label": "Contacts",
+                        "goTo": "/contacts"
+                    }
+                ]
+            }
+        ]
+    }
+  ],
+  "placeholders": [
+    {
+        "placeholder": "toolbar-right",
+        "component": "recently-viewed-sales"
+    }
+  ]
+}
